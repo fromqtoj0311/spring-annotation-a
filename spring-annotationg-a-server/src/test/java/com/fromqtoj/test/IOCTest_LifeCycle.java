@@ -11,28 +11,28 @@ public class IOCTest_LifeCycle {
 
     @Test
     public void LiftCycleSingleton() {
-        //1¡¢´´½¨iocÈİÆ÷
+        //1ã€åˆ›å»ºiocå®¹å™¨
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycleSingleton.class);
-        System.out.println("ÈİÆ÷´´½¨Íê³É...");
-        //¹Ø±ÕÈİÆ÷
+        System.out.println("å®¹å™¨åˆ›å»ºå®Œæˆ...");
+        //å…³é—­å®¹å™¨
         applicationContext.close();
 
 //		car constructor...
 //		car ... init...
-//		ÈİÆ÷´´½¨Íê³É...
+//		å®¹å™¨åˆ›å»ºå®Œæˆ...
 //		car ... detory...
     }
 
     @Test
     public void LiftCyclePrototype() {
-        //1¡¢´´½¨iocÈİÆ÷
+        //1ã€åˆ›å»ºiocå®¹å™¨
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCyclePrototype.class);
-        System.out.println("ÈİÆ÷´´½¨Íê³É...");
+        System.out.println("å®¹å™¨åˆ›å»ºå®Œæˆ...");
 
         applicationContext.getBean("car");
-        //¹Ø±ÕÈİÆ÷
+        //å…³é—­å®¹å™¨
         applicationContext.close();
-        //		ÈİÆ÷´´½¨Íê³É...
+        //		å®¹å™¨åˆ›å»ºå®Œæˆ...
         //		car constructor...
 //		car ... init...
 
@@ -40,35 +40,35 @@ public class IOCTest_LifeCycle {
 
     @Test
     public void LiftCycleSingletonCat() {
-        //1¡¢´´½¨iocÈİÆ÷
+        //1ã€åˆ›å»ºiocå®¹å™¨
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycleSingleton2.class);
-        System.out.println("ÈİÆ÷´´½¨Íê³É...");
-        //¹Ø±ÕÈİÆ÷
+        System.out.println("å®¹å™¨åˆ›å»ºå®Œæˆ...");
+        //å…³é—­å®¹å™¨
         applicationContext.close();
 
 //        car constructor...
 //        car ... init...
 //        cat constructor...
-//        cat...afterPropertiesSet...£¨³õÊ¼»¯·½·¨£©
-//        ÈİÆ÷´´½¨Íê³É...
+//        cat...afterPropertiesSet...ï¼ˆåˆå§‹åŒ–æ–¹æ³•ï¼‰
+//        å®¹å™¨åˆ›å»ºå®Œæˆ...
 //        cat...destroy...
 //        car ... detory...
     }
 
     @Test
     public void LiftCycleSingletonBeanPostProcessor() {
-        //1¡¢´´½¨iocÈİÆ÷
+        //1ã€åˆ›å»ºiocå®¹å™¨
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycleSingleton4.class);
-        System.out.println("ÈİÆ÷´´½¨Íê³É...");
-        //¹Ø±ÕÈİÆ÷
+        System.out.println("å®¹å™¨åˆ›å»ºå®Œæˆ...");
+        //å…³é—­å®¹å™¨
         applicationContext.close();
     }
     @Test
     public void LiftCycleSingletonDog() {
-        //1¡¢´´½¨iocÈİÆ÷
+        //1ã€åˆ›å»ºiocå®¹å™¨
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycleSingleton3.class);
-        System.out.println("ÈİÆ÷´´½¨Íê³É...");
-        //¹Ø±ÕÈİÆ÷
+        System.out.println("å®¹å™¨åˆ›å»ºå®Œæˆ...");
+        //å…³é—­å®¹å™¨
         applicationContext.close();
     }
 }

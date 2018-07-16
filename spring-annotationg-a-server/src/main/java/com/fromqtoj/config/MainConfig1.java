@@ -19,7 +19,7 @@ import org.springframework.stereotype.Controller;
 )
 public class MainConfig1 {
 
-    //给容器中注册一个Bean;类型为返回值的类型，id默认是用方法名作为id
+    //缁欏鍣ㄤ腑娉ㄥ唽涓�涓狟ean;绫诲瀷涓鸿繑鍥炲�肩殑绫诲瀷锛宨d榛樿鏄敤鏂规硶鍚嶄綔涓篿d
     @Bean("person")
     public Person person01() {
         return new Person("lisi", 20);

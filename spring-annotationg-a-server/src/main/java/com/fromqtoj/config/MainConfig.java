@@ -8,15 +8,15 @@ import org.springframework.context.annotation.ComponentScan.Filter;
 
 
 
-//ÅäÖÃÀà==ÅäÖÃÎÄ¼ş
-@Configuration  //¸æËßSpringÕâÊÇÒ»¸öÅäÖÃÀà
+//é…ç½®ç±»==é…ç½®æ–‡ä»¶
+@Configuration  //å‘Šè¯‰Springè¿™æ˜¯ä¸€ä¸ªé…ç½®ç±»
 @ComponentScan(value="com.fromqtoj")
 public class MainConfig {
 
-    //¸øÈİÆ÷ÖĞ×¢²áÒ»¸öBean;ÀàĞÍÎª·µ»ØÖµµÄÀàĞÍ£¬idÄ¬ÈÏÊÇÓÃ·½·¨Ãû×÷Îªid
-    @Bean("person")
-    public Person person01() {
-        return new Person("lisi", 20);
-    }
+  //ç»™å®¹å™¨ä¸­æ³¨å†Œä¸€ä¸ªBean;ç±»å‹ä¸ºè¿”å›å€¼çš„ç±»å‹ï¼Œidé»˜è®¤æ˜¯ç”¨æ–¹æ³•åä½œä¸ºid
+  @Bean("person")
+  public Person person01() {
+    return new Person("lisi", 20);
+  }
 
 }

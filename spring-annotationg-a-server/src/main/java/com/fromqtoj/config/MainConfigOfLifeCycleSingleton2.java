@@ -5,17 +5,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-/**±Ê¼Ç£º
-
- * 2£©¡¢Í¨¹ıÈÃBeanÊµÏÖInitializingBean£¨¶¨Òå³õÊ¼»¯Âß¼­£©£¬
- * 				DisposableBean£¨¶¨ÒåÏú»ÙÂß¼­£©;
+/**ç¬”è®°ï¼š
+ * 2ï¼‰ã€é€šè¿‡è®©Beanå®ç°InitializingBeanï¼ˆå®šä¹‰åˆå§‹åŒ–é€»è¾‘ï¼‰ï¼Œ
+ * 				DisposableBeanï¼ˆå®šä¹‰é”€æ¯é€»è¾‘ï¼‰;
  */
 
-//ÉúÃüÖÜÆÚ cat bean ...
+//ç”Ÿå‘½å‘¨æœŸ cat bean ...
 @ComponentScan("com.fromqtoj.bean")
 @Configuration
 public class MainConfigOfLifeCycleSingleton2 {
-	
+
 	@Bean(initMethod="init",destroyMethod="detory")
 	public Car car(){
 		return new Car();

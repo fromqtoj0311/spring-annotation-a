@@ -4,16 +4,16 @@ import com.fromqtoj.bean.Car;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**±Ê¼Ç£º
- * 3£©¡¢¿ÉÒÔÊ¹ÓÃJSR250£»
- * 		@PostConstruct£ºÔÚbean´´½¨Íê³É²¢ÇÒÊôĞÔ¸³ÖµÍê³É£»À´Ö´ĞĞ³õÊ¼»¯·½·¨
- * 		@PreDestroy£ºÔÚÈİÆ÷Ïú»ÙbeanÖ®Ç°Í¨ÖªÎÒÃÇ½øĞĞÇåÀí¹¤×÷
+/**ç¬”è®°ï¼š
+ * 3ï¼‰ã€å¯ä»¥ä½¿ç”¨JSR250ï¼›
+ * 		@PostConstructï¼šåœ¨beanåˆ›å»ºå®Œæˆå¹¶ä¸”å±æ€§èµ‹å€¼å®Œæˆï¼›æ¥æ‰§è¡Œåˆå§‹åŒ–æ–¹æ³•
+ * 		@PreDestroyï¼šåœ¨å®¹å™¨é”€æ¯beanä¹‹å‰é€šçŸ¥æˆ‘ä»¬è¿›è¡Œæ¸…ç†å·¥ä½œ
  */
 
-//ÉúÃüÖÜÆÚ
+//ç”Ÿå‘½å‘¨æœŸ
 @Configuration
 public class MainConfigOfLifeCycleSingleton3 {
-	
+
 	//@Scope("prototype")
 	@Bean(initMethod="init",destroyMethod="detory")
 	public Car car(){
