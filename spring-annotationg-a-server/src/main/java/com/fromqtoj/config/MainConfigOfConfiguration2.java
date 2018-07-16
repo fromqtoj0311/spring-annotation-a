@@ -16,7 +16,7 @@ import org.springframework.stereotype.Controller;
                 },useDefaultFilters = false)
         }
 )
-public class MainConfig2 {
+public class MainConfigOfConfiguration2 {
 
     //给容器中注册一个Bean;类型为返回值的类型，id默认是用方法名作为id
     @Bean("person")

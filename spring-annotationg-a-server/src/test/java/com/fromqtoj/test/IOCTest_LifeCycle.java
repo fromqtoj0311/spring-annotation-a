@@ -1,13 +1,12 @@
 package com.fromqtoj.test;
 
-import com.fromqtoj.config.MainConfigOfLifeCyclePrototype;
-import com.fromqtoj.config.MainConfigOfLifeCycleSingleton;
-import com.fromqtoj.config.MainConfigOfLifeCycleSingleton2;
-import com.fromqtoj.config.MainConfigOfLifeCycleSingleton3;
+import com.fromqtoj.config.*;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class IOCTest_LifeCycle {
+
+    // beans : Person car cat dog
 
     @Test
     public void LiftCycleSingleton() {
